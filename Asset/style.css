@@ -162,7 +162,6 @@ align-items: center;
   background-color: rgb(35, 39, 42);
   height: 500px;
   border-bottom: 1px solid white;
-  justify-content: center;
 }
 
 .infobox{
@@ -172,18 +171,58 @@ align-items: center;
 }
 
 .social{
-  background-color: rgb(32, 178, 170);
-  border: 1px dashed rgb(0, 0, 0);
   padding: 20px;
+  width: 20%;
+}
 
+.social p:first-child{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(107, 134, 218);
+}
+
+.language{
+  padding: 15px 0;
+  align-items: center;
+}
+
+.language p:nth-child(2){
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.flag{
+  width: 20px;
+  margin-right: 5px;
+}
+
+.language,
+.icon i{
+  padding-right: 20px;
+  color: white;
+}
+
+/* Menu */
+
+.menu{
+  width: 80%;
+  font-size: 0.8rem;
 }
 
 .col{
   display: flex;
-  flex-basis: 25%;
-  background-color: rgb(32, 178, 170);
-  border: 1px dashed white;
-  padding: 20px;
+  justify-content: center;  flex-basis: 25%;
+  padding: 20px 0px;
+  color: white;
+}
+
+.col li{
+  padding-bottom: 15px;
+}
+
+.col li:first-child{
+  color: rgb(107, 134, 218);
+
 }
 
 /* Footer */
