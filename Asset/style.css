@@ -38,7 +38,7 @@ body{
 .btn-violet{
   background-color: rgb(114, 137, 218);
   border-radius: 25px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   color: white;
 }
 
@@ -83,7 +83,7 @@ li a:hover{
 .jumbotron{
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100%;
   background-image: url("./img/jumbo.png");
   background-size: cover;
   background-position: center;
@@ -91,7 +91,7 @@ li a:hover{
 
 .jumbo-text{
   color: white;
-  width: 95%;
+  width: 80%;
   max-width: 600px;
   text-align: center;
 }
@@ -116,26 +116,45 @@ li a:hover{
 }
 
 /* Section alternate */
-
-.blupink-container{
-  height: 400px;
-  border: 1px dashed black;
-}
-
 section{
   padding: 40px 0px;
 }
 
-.big-column{
+.blupink-container{
+  height: 400px;
+  align-items: central;
+}
+
+
+.big-col{
   background-color: rgb(30, 144, 255);
   border: 1px dashed black;
   width: 60%;
 }
 
-.small-column{
+.big-col img{
+  width: 100%;
+  align-items: central;
+}
+
+.small-col{
   background-color: rgb(255, 192, 203);
   border: 1px dashed black;
   width: 40%;
+  padding: 30px;
+}
+
+.small-text{
+  margin: 0px auto;
+}
+
+.small-col p:first-child{
+  font-size: 1.8rem;
+}
+
+.small-col p:last-child{
+  padding-top: 20px;
+  font-size: 1.2rem;
 }
 
 .bkggrey{
@@ -252,17 +271,8 @@ align-items: center;
   padding: 5px;
 }
 
-.register{
-  margin: 10px 0px;
-  padding: 5px;
-}
-
 /* Banner */
 
 .banner .logo{
   padding-top: 10px;
-}
-
-.banner .btn-violet{
-  padding: 10px;
 }
