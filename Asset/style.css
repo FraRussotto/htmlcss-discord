@@ -35,13 +35,20 @@ body{
   padding: 10px 15px;
 }
 
+.btn-violet{
+  background-color: rgb(114, 137, 218);
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: white;
+}
+
 /* Header */
 
 .nav-container{
   background-color: rgb(37, 94, 233);
   height: 80px;
   padding: 10px 0px;
-align-items: center;
+  align-items: center;
 }
 
 .nav{
@@ -69,8 +76,6 @@ li a:hover{
 .login a{
   text-decoration: none;
   color: black;
-
-
 }
 
 /* Main-link */
@@ -161,13 +166,15 @@ align-items: center;
 .bkgfooter{
   background-color: rgb(35, 39, 42);
   height: 500px;
-  border-bottom: 1px solid white;
 }
 
 .infobox{
   padding-top: 10px;
   padding-bottom: 20px;
   display: flex;
+  border-bottom:1px solid rgb(107, 134, 218);;
+  ;
+
 }
 
 .social{
@@ -235,21 +242,27 @@ align-items: center;
 
 .foot{
   justify-content: space-between;
-  background-color: aqua;
+  height: 60px;
+  align-items: center;
+
 }
 
 .logo-bottom{
-  background-color: rgb(255, 182, 193);
-  border: 1px dashed black;
   margin: 10px 0px;
   padding: 5px;
 }
 
 .register{
-  background-color: rgb(255, 182, 193);
-  border: 1px dashed black;
   margin: 10px 0px;
   padding: 5px;
 }
 
-/* /Footer */
+/* Banner */
+
+.banner .logo{
+  padding-top: 10px;
+}
+
+.banner .btn-violet{
+  padding: 10px;
+}
