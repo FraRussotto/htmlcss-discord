@@ -18,8 +18,19 @@ body{
   display: flex;
 }
 
+.d-flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
 .btn{
   background-color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.btn-black{
+  background-color: rgb(35, 39, 42);
   border-radius: 25px;
   padding: 10px 15px;
 }
@@ -30,6 +41,7 @@ body{
   background-color: rgb(37, 94, 233);
   height: 80px;
   padding: 10px 0px;
+align-items: center;
 }
 
 .nav{
@@ -43,7 +55,11 @@ li{
   padding: 0px 10px;
  }
 
-li a,
+a{
+  text-decoration: none;
+  color: white;
+}
+
 li a:hover{
   text-decoration: none;
   color: white;
@@ -57,26 +73,42 @@ li a:hover{
 
 }
 
-
-/* /Header */
-
 /* Main-link */
 
 .jumbotron{
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: #255EE9;
+  background-image: url("./img/jumbo.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.boxrosa{
-  background-color: rgb(238, 130, 238);
-  border: 1px dashed black;
-  width: 90%;
-  max-width: 1000px;
+.jumbo-text{
+  color: white;
+  width: 95%;
+  max-width: 600px;
+  text-align: center;
 }
 
-/* /Main-link */
+.jumbo-text p:first-child{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.jumbo-text p:nth-child(2){
+  line-height: 25px;
+}
+
+.btn, .btn-black{
+  margin: 20px 15px;
+
+}
+
+.btn-jumbotron a .btn{
+  color: black;
+}
 
 /* Section alternate */
 
