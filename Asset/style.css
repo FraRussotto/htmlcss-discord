@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-  width: 90%;
+  width: 80%;
   max-width: 1200px;
   margin: 0px auto;
 }
@@ -24,15 +24,16 @@ body{
 }
 
 .btn{
+  font-size: 1.2rem;
   background-color: white;
   border-radius: 25px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 .btn-black{
   background-color: rgb(35, 39, 42);
   border-radius: 25px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 .btn-violet{
@@ -42,7 +43,26 @@ body{
   color: white;
 }
 
+.wave{
+  height: 100px;
+  filter: opacity(0.04);
+  background-image: url(./img/wave.svg);
+  background-size: cover;
+}
+
+.rotate{
+  transform: rotateX(180deg);
+}
+
 /* Header */
+.bar-fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999
+  ;
+}
 
 .nav-container{
   background-color: rgb(37, 94, 233);
@@ -79,31 +99,34 @@ li a:hover{
 }
 
 /* Main-link */
-
+main{
+  margin-top: 80px;
+}
 .jumbotron{
   justify-content: center;
   align-items: center;
-  height: 100%;
   background-image: url("./img/jumbo.png");
   background-size: cover;
   background-position: center;
+  height: 550px;
 }
 
 .jumbo-text{
+  width: 40%;
   color: white;
-  width: 80%;
-  max-width: 600px;
   text-align: center;
 }
 
 .jumbo-text p:first-child{
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .jumbo-text p:nth-child(2){
-  line-height: 25px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .btn, .btn-black{
@@ -111,24 +134,34 @@ li a:hover{
 
 }
 
+.btn-jumbotron.btn, .btn-black{
+  font-size: 1.2rem;
+}
+
 .btn-jumbotron a .btn{
   color: black;
 }
 
 /* Section alternate */
+img{
+  max-width: 100%;
+}
+
 section{
-  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bkggrey{
+  background-color: #f6f6f6;
 }
 
 .blupink-container{
-  height: 400px;
   align-items: central;
 }
 
-
 .big-col{
-  background-color: rgb(30, 144, 255);
-  border: 1px dashed black;
   width: 60%;
 }
 
@@ -138,47 +171,71 @@ section{
 }
 
 .small-col{
-  background-color: rgb(255, 192, 203);
-  border: 1px dashed black;
   width: 40%;
   padding: 30px;
 }
 
 .small-text{
-  margin: 0px auto;
+  width: 375px;
+  text-align: left;
+  padding: 20px 40px;
 }
 
 .small-col p:first-child{
-  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 50px;
 }
 
 .small-col p:last-child{
   padding-top: 20px;
   font-size: 1.2rem;
-}
+  line-height: 30px;
 
-.bkggrey{
-  background-color: rgb(211, 211, 211);
 }
-
-/* /Section alternate */
 
 /* Section Download */
 
-.download{
-background-color: rgb(211, 211, 211);
-height: 800px;
-display: flex;
-justify-content: center;
-align-items: center;
+.boxdownload{
+/* background-color: green; */
+text-align: center;
 }
 
-.boxgreen{
-  background-color: green;
-  height: 90%;
+.boxdownload p:nth-child(1){
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
-/* /Section Download */
+.boxdownload p:nth-child(2){
+  padding-top: 20px;
+  font-size: 1.2rem;
+  line-height: 30px; 
+}
+.d-flex-column{
+  align-items: center;
+}
+.d-text{
+  width: 80%;
+}
+.boxdownload{
+  margin-bottom: 50px;
+}
+.boxdownload img{
+  width: 100%;
+}
+
+.boxdownload h3{
+  font-size: 1.5rem;
+  width: 45%;
+  margin: 40px auto;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  background-image: url(./img/stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 
 /* Infobox */
 
